@@ -39,13 +39,11 @@
           <p class="text-[10px] text-slate-500 -mt-1 tracking-widest uppercase">Behavioral Anomaly Detection</p>
         </div>
       </div>
-      <nav class="hidden md:flex items-center gap-6">
+      <nav class="hidden md:flex items-center gap-8">
         <a href="#kpi-section" class="nav-link text-sm text-slate-400 hover:text-cyan-400 transition">Overview</a>
         <a href="#charts-section" class="nav-link text-sm text-slate-400 hover:text-cyan-400 transition">Analytics</a>
         <a href="#alerts-section" class="nav-link text-sm text-slate-400 hover:text-cyan-400 transition">Alerts</a>
         <a href="#model-section" class="nav-link text-sm text-slate-400 hover:text-cyan-400 transition">Model</a>
-        <a href="/pdf/presentation" target="_blank" class="text-xs bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/20 px-3 py-1.5 rounded-lg transition font-medium"><i class="fa-solid fa-file-pdf mr-1"></i> Presentation PDF</a>
-        <a href="/pdf/report" target="_blank" class="text-xs bg-purple-500/10 border border-purple-500/30 text-purple-400 hover:bg-purple-500/20 px-3 py-1.5 rounded-lg transition font-medium"><i class="fa-solid fa-file-lines mr-1"></i> Report PDF</a>
       </nav>
       <div class="flex items-center gap-4">
         <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
@@ -151,19 +149,19 @@
     <!-- ── CHARTS ROW 2 ── -->
     <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 fade-in" style="animation-delay:0.15s">
       <!-- Entity Risk -->
-      <div class="glass-panel p-6 col-span-1">
-        <div class="flex items-center justify-between mb-4">
+      <div class="glass-panel p-6 col-span-1 h-[520px] flex flex-col">
+        <div class="flex items-center justify-between mb-4 flex-shrink-0">
           <h3 class="section-title">Top Entities by Risk</h3>
           <span class="text-xs text-slate-500 bg-white/5 px-2 py-1 rounded">Top 10</span>
         </div>
-        <div class="relative h-[340px]">
+        <div class="relative flex-1 min-h-0">
           <canvas id="chart-entity-risk"></canvas>
         </div>
       </div>
 
       <!-- ── ALERT QUEUE ── -->
-      <div id="alerts-section" class="glass-panel p-6 col-span-2 flex flex-col">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+      <div id="alerts-section" class="glass-panel p-6 col-span-2 h-[520px] flex flex-col">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 flex-shrink-0">
           <h3 class="section-title"><i class="fa-solid fa-bell text-amber-400 mr-2"></i>Alert Queue</h3>
           <div class="flex flex-wrap gap-2">
             <input id="alert-search" type="text" placeholder="Search alerts…"
@@ -193,7 +191,7 @@
           </div>
         </div>
 
-        <div class="overflow-auto flex-1 rounded-lg border border-white/5 min-h-[280px]">
+        <div class="overflow-y-auto flex-1 rounded-lg border border-white/5 min-h-0">
           <table class="w-full text-left border-collapse">
             <thead class="bg-white/5 sticky top-0 z-10">
               <tr>
