@@ -79,6 +79,17 @@ def reload_data():
 # ---------------------------------------------------------------------------
 # Dashboard serving
 # ---------------------------------------------------------------------------
+@app.after_request
+def add_no_cache_headers(response):
+    """Disable caching for HTML/JS/CSS so Render always serves latest."""
+    ct = response.content_type or ''
+    if any(t in ct for t in ['text/html', 'javascript', 'text/css']):
+        response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+        response.headers['Pragma'] = 'no-cache'
+        response.headers['Expires'] = '0'
+    return response
+
+
 @app.route("/")
 def serve_dashboard():
     """Serve the main dashboard HTML page."""
@@ -468,11 +479,15 @@ def api_health():
 
 
 # ---------------------------------------------------------------------------
+# Auto-load data when module is imported (e.g. by gunicorn)
+# ---------------------------------------------------------------------------
+ensure_directories()
+reload_data()
+
+# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    ensure_directories()
-    reload_data()
     logger.info(
         "CyberShield AI API starting on http://%s:%s",
         SERVER_HOST, SERVER_PORT,
