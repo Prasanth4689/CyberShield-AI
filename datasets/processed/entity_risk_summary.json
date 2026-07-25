@@ -1,0 +1,2002 @@
+[
+  {
+    "entity_id": "USR_000",
+    "entity_type": "user",
+    "total_events": 75,
+    "anomaly_count": 35,
+    "last_seen": "2026-07-25 09:22:22.639990",
+    "avg_risk_score": 50.9,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_110",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 28,
+    "last_seen": "2026-07-31 17:49:09.639990",
+    "avg_risk_score": 49.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_020",
+    "entity_type": "service_account",
+    "total_events": 87,
+    "anomaly_count": 36,
+    "last_seen": "2026-07-24 16:37:35.639990",
+    "avg_risk_score": 48.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_061",
+    "entity_type": "user",
+    "total_events": 71,
+    "anomaly_count": 31,
+    "last_seen": "2026-07-23 22:52:15.639990",
+    "avg_risk_score": 46.8,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_023",
+    "entity_type": "user",
+    "total_events": 52,
+    "anomaly_count": 22,
+    "last_seen": "2026-07-24 12:13:56.639990",
+    "avg_risk_score": 45.7,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_094",
+    "entity_type": "user",
+    "total_events": 71,
+    "anomaly_count": 30,
+    "last_seen": "2026-07-24 10:08:40.639990",
+    "avg_risk_score": 45.7,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_142",
+    "entity_type": "user",
+    "total_events": 71,
+    "anomaly_count": 29,
+    "last_seen": "2026-07-25 13:05:34.639990",
+    "avg_risk_score": 45.1,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_131",
+    "entity_type": "user",
+    "total_events": 68,
+    "anomaly_count": 28,
+    "last_seen": "2026-07-24 13:44:27.639990",
+    "avg_risk_score": 45.1,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_074",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 25,
+    "last_seen": "2026-07-25 17:24:05.639990",
+    "avg_risk_score": 44.8,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_062",
+    "entity_type": "user",
+    "total_events": 63,
+    "anomaly_count": 24,
+    "last_seen": "2026-07-25 01:02:02.639990",
+    "avg_risk_score": 44.1,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_067",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 21,
+    "last_seen": "2026-07-25 10:28:57.639990",
+    "avg_risk_score": 44.0,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_140",
+    "entity_type": "user",
+    "total_events": 75,
+    "anomaly_count": 27,
+    "last_seen": "2026-07-27 02:34:19.639990",
+    "avg_risk_score": 43.8,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_079",
+    "entity_type": "user",
+    "total_events": 56,
+    "anomaly_count": 23,
+    "last_seen": "2026-07-27 22:45:28.639990",
+    "avg_risk_score": 43.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_017",
+    "entity_type": "user",
+    "total_events": 72,
+    "anomaly_count": 29,
+    "last_seen": "2026-07-25 15:58:20.639990",
+    "avg_risk_score": 42.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_009",
+    "entity_type": "user",
+    "total_events": 66,
+    "anomaly_count": 25,
+    "last_seen": "2026-07-25 04:47:28.639990",
+    "avg_risk_score": 41.9,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_040",
+    "entity_type": "user",
+    "total_events": 60,
+    "anomaly_count": 23,
+    "last_seen": "2026-07-25 12:16:35.639990",
+    "avg_risk_score": 41.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_004",
+    "entity_type": "service_account",
+    "total_events": 64,
+    "anomaly_count": 24,
+    "last_seen": "2026-07-25 23:33:51.639990",
+    "avg_risk_score": 40.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "DEV_016",
+    "entity_type": "edge_device",
+    "total_events": 59,
+    "anomaly_count": 19,
+    "last_seen": "2026-07-25 14:03:21.639990",
+    "avg_risk_score": 40.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_090",
+    "entity_type": "user",
+    "total_events": 61,
+    "anomaly_count": 22,
+    "last_seen": "2026-08-03 21:38:42.639990",
+    "avg_risk_score": 40.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_122",
+    "entity_type": "user",
+    "total_events": 76,
+    "anomaly_count": 27,
+    "last_seen": "2026-07-25 09:18:51.639990",
+    "avg_risk_score": 39.1,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_007",
+    "entity_type": "user",
+    "total_events": 79,
+    "anomaly_count": 28,
+    "last_seen": "2026-07-24 13:56:17.639990",
+    "avg_risk_score": 38.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_073",
+    "entity_type": "user",
+    "total_events": 65,
+    "anomaly_count": 22,
+    "last_seen": "2026-07-27 02:07:08.639990",
+    "avg_risk_score": 37.9,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_143",
+    "entity_type": "user",
+    "total_events": 65,
+    "anomaly_count": 22,
+    "last_seen": "2026-07-23 15:36:10.639990",
+    "avg_risk_score": 37.5,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_066",
+    "entity_type": "user",
+    "total_events": 76,
+    "anomaly_count": 26,
+    "last_seen": "2026-07-27 20:03:10.639990",
+    "avg_risk_score": 37.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_100",
+    "entity_type": "user",
+    "total_events": 59,
+    "anomaly_count": 19,
+    "last_seen": "2026-07-29 15:35:03.639990",
+    "avg_risk_score": 37.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_123",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-25 09:27:36.639990",
+    "avg_risk_score": 37.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_011",
+    "entity_type": "user",
+    "total_events": 43,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-23 03:38:09.639990",
+    "avg_risk_score": 36.9,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_029",
+    "entity_type": "user",
+    "total_events": 58,
+    "anomaly_count": 19,
+    "last_seen": "2026-07-25 10:29:10.639990",
+    "avg_risk_score": 36.9,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_108",
+    "entity_type": "user",
+    "total_events": 67,
+    "anomaly_count": 22,
+    "last_seen": "2026-07-24 17:31:27.639990",
+    "avg_risk_score": 36.5,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_024",
+    "entity_type": "user",
+    "total_events": 74,
+    "anomaly_count": 24,
+    "last_seen": "2026-07-25 11:10:04.639990",
+    "avg_risk_score": 36.5,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_010",
+    "entity_type": "user",
+    "total_events": 58,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-24 16:15:26.639990",
+    "avg_risk_score": 36.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_012",
+    "entity_type": "service_account",
+    "total_events": 62,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-30 00:50:45.639990",
+    "avg_risk_score": 36.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_116",
+    "entity_type": "user",
+    "total_events": 69,
+    "anomaly_count": 21,
+    "last_seen": "2026-07-25 10:05:14.639990",
+    "avg_risk_score": 36.0,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_064",
+    "entity_type": "user",
+    "total_events": 73,
+    "anomaly_count": 23,
+    "last_seen": "2026-07-25 17:21:55.639990",
+    "avg_risk_score": 35.9,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_083",
+    "entity_type": "user",
+    "total_events": 71,
+    "anomaly_count": 21,
+    "last_seen": "2026-07-23 23:47:38.639990",
+    "avg_risk_score": 35.7,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_001",
+    "entity_type": "service_account",
+    "total_events": 71,
+    "anomaly_count": 20,
+    "last_seen": "2026-07-25 17:54:24.639990",
+    "avg_risk_score": 35.5,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_010",
+    "entity_type": "service_account",
+    "total_events": 58,
+    "anomaly_count": 19,
+    "last_seen": "2026-07-31 11:50:50.639990",
+    "avg_risk_score": 35.5,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_148",
+    "entity_type": "user",
+    "total_events": 61,
+    "anomaly_count": 19,
+    "last_seen": "2026-07-25 02:38:13.639990",
+    "avg_risk_score": 35.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_019",
+    "entity_type": "user",
+    "total_events": 57,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-24 16:07:10.639990",
+    "avg_risk_score": 35.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_014",
+    "entity_type": "user",
+    "total_events": 68,
+    "anomaly_count": 21,
+    "last_seen": "2026-07-24 16:19:24.639990",
+    "avg_risk_score": 35.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "DEV_006",
+    "entity_type": "edge_device",
+    "total_events": 59,
+    "anomaly_count": 19,
+    "last_seen": "2026-07-25 01:39:44.639990",
+    "avg_risk_score": 34.8,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_128",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 20,
+    "last_seen": "2026-07-26 23:14:30.639990",
+    "avg_risk_score": 34.8,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_043",
+    "entity_type": "user",
+    "total_events": 54,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-29 00:04:01.639990",
+    "avg_risk_score": 34.7,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "DEV_012",
+    "entity_type": "edge_device",
+    "total_events": 59,
+    "anomaly_count": 19,
+    "last_seen": "2026-07-25 04:45:56.639990",
+    "avg_risk_score": 34.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_132",
+    "entity_type": "user",
+    "total_events": 57,
+    "anomaly_count": 17,
+    "last_seen": "2026-08-02 02:20:36.639990",
+    "avg_risk_score": 34.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_078",
+    "entity_type": "user",
+    "total_events": 50,
+    "anomaly_count": 15,
+    "last_seen": "2026-07-24 16:34:15.639990",
+    "avg_risk_score": 34.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_087",
+    "entity_type": "user",
+    "total_events": 66,
+    "anomaly_count": 20,
+    "last_seen": "2026-07-24 16:33:50.639990",
+    "avg_risk_score": 34.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_020",
+    "entity_type": "user",
+    "total_events": 67,
+    "anomaly_count": 20,
+    "last_seen": "2026-07-25 00:38:35.639990",
+    "avg_risk_score": 34.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_025",
+    "entity_type": "user",
+    "total_events": 68,
+    "anomaly_count": 20,
+    "last_seen": "2026-07-26 22:29:20.639990",
+    "avg_risk_score": 34.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_086",
+    "entity_type": "user",
+    "total_events": 58,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-22 13:01:38.639990",
+    "avg_risk_score": 34.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_015",
+    "entity_type": "user",
+    "total_events": 69,
+    "anomaly_count": 21,
+    "last_seen": "2026-07-24 14:57:28.639990",
+    "avg_risk_score": 34.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_109",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-27 21:46:58.639990",
+    "avg_risk_score": 34.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_051",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-29 15:29:57.639990",
+    "avg_risk_score": 34.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_046",
+    "entity_type": "user",
+    "total_events": 67,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-24 09:15:42.639990",
+    "avg_risk_score": 33.9,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_008",
+    "entity_type": "service_account",
+    "total_events": 50,
+    "anomaly_count": 13,
+    "last_seen": "2026-08-02 03:06:56.639990",
+    "avg_risk_score": 33.9,
+    "max_risk_score": 99.8,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_127",
+    "entity_type": "user",
+    "total_events": 56,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-25 14:32:02.639990",
+    "avg_risk_score": 33.6,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_009",
+    "entity_type": "service_account",
+    "total_events": 75,
+    "anomaly_count": 20,
+    "last_seen": "2026-07-25 03:57:58.639990",
+    "avg_risk_score": 33.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_113",
+    "entity_type": "user",
+    "total_events": 56,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-25 17:00:13.639990",
+    "avg_risk_score": 33.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_088",
+    "entity_type": "user",
+    "total_events": 76,
+    "anomaly_count": 21,
+    "last_seen": "2026-07-25 15:25:53.639990",
+    "avg_risk_score": 33.1,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_106",
+    "entity_type": "user",
+    "total_events": 67,
+    "anomaly_count": 20,
+    "last_seen": "2026-07-25 12:20:20.639990",
+    "avg_risk_score": 32.7,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_072",
+    "entity_type": "user",
+    "total_events": 55,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-28 03:11:42.639990",
+    "avg_risk_score": 32.6,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_111",
+    "entity_type": "user",
+    "total_events": 63,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-24 15:51:04.639990",
+    "avg_risk_score": 32.5,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_125",
+    "entity_type": "user",
+    "total_events": 67,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-25 14:37:29.639990",
+    "avg_risk_score": 32.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "DEV_004",
+    "entity_type": "edge_device",
+    "total_events": 77,
+    "anomaly_count": 20,
+    "last_seen": "2026-08-02 04:46:14.639990",
+    "avg_risk_score": 32.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_011",
+    "entity_type": "service_account",
+    "total_events": 52,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-22 16:42:21.639990",
+    "avg_risk_score": 32.1,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_095",
+    "entity_type": "user",
+    "total_events": 64,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-24 13:47:10.639990",
+    "avg_risk_score": 31.7,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_016",
+    "entity_type": "service_account",
+    "total_events": 44,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-25 22:44:16.639990",
+    "avg_risk_score": 31.6,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_049",
+    "entity_type": "user",
+    "total_events": 63,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-29 18:44:42.639990",
+    "avg_risk_score": 31.4,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_006",
+    "entity_type": "user",
+    "total_events": 60,
+    "anomaly_count": 15,
+    "last_seen": "2026-07-24 10:01:30.639990",
+    "avg_risk_score": 31.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "DEV_003",
+    "entity_type": "edge_device",
+    "total_events": 66,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-23 18:24:46.639990",
+    "avg_risk_score": 31.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_044",
+    "entity_type": "user",
+    "total_events": 63,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-24 19:13:21.639990",
+    "avg_risk_score": 31.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_008",
+    "entity_type": "user",
+    "total_events": 60,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-25 10:34:21.639990",
+    "avg_risk_score": 31.2,
+    "max_risk_score": 99.8,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_029",
+    "entity_type": "service_account",
+    "total_events": 59,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-24 10:27:22.639990",
+    "avg_risk_score": 31.2,
+    "max_risk_score": 99.9,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_076",
+    "entity_type": "user",
+    "total_events": 50,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-24 13:28:52.639990",
+    "avg_risk_score": 31.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_068",
+    "entity_type": "user",
+    "total_events": 67,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-24 23:03:47.639990",
+    "avg_risk_score": 31.1,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_018",
+    "entity_type": "service_account",
+    "total_events": 58,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-25 10:07:23.639990",
+    "avg_risk_score": 30.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_124",
+    "entity_type": "user",
+    "total_events": 58,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-31 04:31:41.639990",
+    "avg_risk_score": 30.3,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_034",
+    "entity_type": "user",
+    "total_events": 64,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-25 11:33:33.639990",
+    "avg_risk_score": 30.2,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "DEV_019",
+    "entity_type": "edge_device",
+    "total_events": 75,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-24 05:42:42.639990",
+    "avg_risk_score": 30.1,
+    "max_risk_score": 100.0,
+    "status": "warning"
+  },
+  {
+    "entity_id": "SVC_007",
+    "entity_type": "service_account",
+    "total_events": 69,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-25 18:41:05.639990",
+    "avg_risk_score": 30.1,
+    "max_risk_score": 99.9,
+    "status": "warning"
+  },
+  {
+    "entity_id": "USR_135",
+    "entity_type": "user",
+    "total_events": 67,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-24 14:58:18.639990",
+    "avg_risk_score": 30.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_126",
+    "entity_type": "user",
+    "total_events": 55,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-25 02:46:18.639990",
+    "avg_risk_score": 29.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_015",
+    "entity_type": "edge_device",
+    "total_events": 72,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-25 09:37:25.639990",
+    "avg_risk_score": 29.7,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_120",
+    "entity_type": "user",
+    "total_events": 49,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-21 16:41:48.639990",
+    "avg_risk_score": 29.5,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_007",
+    "entity_type": "edge_device",
+    "total_events": 59,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-24 18:39:14.639990",
+    "avg_risk_score": 29.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_060",
+    "entity_type": "user",
+    "total_events": 49,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 14:26:28.639990",
+    "avg_risk_score": 29.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_146",
+    "entity_type": "user",
+    "total_events": 57,
+    "anomaly_count": 16,
+    "last_seen": "2026-08-04 09:44:18.639990",
+    "avg_risk_score": 29.2,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_014",
+    "entity_type": "edge_device",
+    "total_events": 56,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-25 10:26:53.639990",
+    "avg_risk_score": 29.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_026",
+    "entity_type": "service_account",
+    "total_events": 68,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-25 00:29:20.639990",
+    "avg_risk_score": 29.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_119",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-24 17:17:06.639990",
+    "avg_risk_score": 28.9,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_025",
+    "entity_type": "service_account",
+    "total_events": 66,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-25 06:13:17.639990",
+    "avg_risk_score": 28.7,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_069",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-24 06:39:13.639990",
+    "avg_risk_score": 28.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_059",
+    "entity_type": "user",
+    "total_events": 75,
+    "anomaly_count": 18,
+    "last_seen": "2026-07-25 08:09:19.639990",
+    "avg_risk_score": 28.5,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_002",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 16,
+    "last_seen": "2026-07-24 08:36:25.639990",
+    "avg_risk_score": 28.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_058",
+    "entity_type": "user",
+    "total_events": 48,
+    "anomaly_count": 10,
+    "last_seen": "2026-07-24 16:39:24.639990",
+    "avg_risk_score": 28.3,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_003",
+    "entity_type": "user",
+    "total_events": 57,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-25 11:36:51.639990",
+    "avg_risk_score": 28.2,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_030",
+    "entity_type": "user",
+    "total_events": 73,
+    "anomaly_count": 17,
+    "last_seen": "2026-07-25 16:18:49.639990",
+    "avg_risk_score": 28.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_013",
+    "entity_type": "service_account",
+    "total_events": 57,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-24 21:11:07.639990",
+    "avg_risk_score": 28.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_033",
+    "entity_type": "user",
+    "total_events": 54,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-25 14:02:29.639990",
+    "avg_risk_score": 28.0,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_000",
+    "entity_type": "service_account",
+    "total_events": 45,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-31 07:50:18.639990",
+    "avg_risk_score": 27.9,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_130",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-25 17:20:53.639990",
+    "avg_risk_score": 27.9,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_036",
+    "entity_type": "user",
+    "total_events": 54,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 15:16:13.639990",
+    "avg_risk_score": 27.5,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_015",
+    "entity_type": "service_account",
+    "total_events": 59,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-22 21:20:03.639990",
+    "avg_risk_score": 27.2,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_082",
+    "entity_type": "user",
+    "total_events": 54,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 15:35:34.639990",
+    "avg_risk_score": 27.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_147",
+    "entity_type": "user",
+    "total_events": 54,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-25 06:50:39.639990",
+    "avg_risk_score": 27.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_006",
+    "entity_type": "service_account",
+    "total_events": 58,
+    "anomaly_count": 10,
+    "last_seen": "2026-07-24 23:02:59.639990",
+    "avg_risk_score": 27.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_053",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 17:33:11.639990",
+    "avg_risk_score": 27.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_098",
+    "entity_type": "user",
+    "total_events": 59,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-24 17:46:22.639990",
+    "avg_risk_score": 26.7,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_056",
+    "entity_type": "user",
+    "total_events": 47,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-24 03:12:11.639990",
+    "avg_risk_score": 26.6,
+    "max_risk_score": 99.8,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_139",
+    "entity_type": "user",
+    "total_events": 46,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-25 09:12:15.639990",
+    "avg_risk_score": 26.5,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_052",
+    "entity_type": "user",
+    "total_events": 55,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 17:03:50.639990",
+    "avg_risk_score": 26.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_028",
+    "entity_type": "service_account",
+    "total_events": 52,
+    "anomaly_count": 10,
+    "last_seen": "2026-07-24 17:49:16.639990",
+    "avg_risk_score": 26.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_097",
+    "entity_type": "user",
+    "total_events": 57,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 15:43:03.639990",
+    "avg_risk_score": 26.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_035",
+    "entity_type": "user",
+    "total_events": 60,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-25 13:52:18.639990",
+    "avg_risk_score": 26.3,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_121",
+    "entity_type": "user",
+    "total_events": 52,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-25 04:24:24.639990",
+    "avg_risk_score": 26.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_141",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 12:22:35.639990",
+    "avg_risk_score": 25.9,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_136",
+    "entity_type": "user",
+    "total_events": 63,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-25 09:24:55.639990",
+    "avg_risk_score": 25.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_018",
+    "entity_type": "user",
+    "total_events": 56,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-24 13:17:20.639990",
+    "avg_risk_score": 25.5,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_022",
+    "entity_type": "service_account",
+    "total_events": 60,
+    "anomaly_count": 14,
+    "last_seen": "2026-08-01 14:59:58.639990",
+    "avg_risk_score": 25.5,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_023",
+    "entity_type": "service_account",
+    "total_events": 71,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-31 15:56:10.639990",
+    "avg_risk_score": 25.5,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_057",
+    "entity_type": "user",
+    "total_events": 58,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-25 14:16:31.639990",
+    "avg_risk_score": 25.5,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_017",
+    "entity_type": "service_account",
+    "total_events": 60,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-25 06:50:43.639990",
+    "avg_risk_score": 25.4,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_070",
+    "entity_type": "user",
+    "total_events": 68,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-23 13:31:24.639990",
+    "avg_risk_score": 25.3,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_027",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-24 10:45:32.639990",
+    "avg_risk_score": 25.2,
+    "max_risk_score": 99.5,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_027",
+    "entity_type": "service_account",
+    "total_events": 63,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-27 02:35:30.639990",
+    "avg_risk_score": 25.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_134",
+    "entity_type": "user",
+    "total_events": 65,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-24 16:19:53.639990",
+    "avg_risk_score": 25.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_107",
+    "entity_type": "user",
+    "total_events": 64,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-24 17:39:05.639990",
+    "avg_risk_score": 24.9,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_038",
+    "entity_type": "user",
+    "total_events": 67,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-25 09:49:51.639990",
+    "avg_risk_score": 24.8,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_149",
+    "entity_type": "user",
+    "total_events": 55,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-25 01:48:13.639990",
+    "avg_risk_score": 24.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_011",
+    "entity_type": "edge_device",
+    "total_events": 69,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-24 22:24:16.639990",
+    "avg_risk_score": 24.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_129",
+    "entity_type": "user",
+    "total_events": 60,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 22:46:55.639990",
+    "avg_risk_score": 24.5,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_114",
+    "entity_type": "user",
+    "total_events": 70,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-24 22:22:19.639990",
+    "avg_risk_score": 24.5,
+    "max_risk_score": 99.8,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_022",
+    "entity_type": "user",
+    "total_events": 59,
+    "anomaly_count": 11,
+    "last_seen": "2026-08-03 17:38:48.639990",
+    "avg_risk_score": 24.2,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_021",
+    "entity_type": "user",
+    "total_events": 68,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-29 06:27:22.639990",
+    "avg_risk_score": 24.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_144",
+    "entity_type": "user",
+    "total_events": 57,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-25 06:50:33.639990",
+    "avg_risk_score": 24.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_005",
+    "entity_type": "edge_device",
+    "total_events": 62,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-24 20:59:36.639990",
+    "avg_risk_score": 24.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_117",
+    "entity_type": "user",
+    "total_events": 52,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-25 12:18:00.639990",
+    "avg_risk_score": 23.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_050",
+    "entity_type": "user",
+    "total_events": 50,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-25 01:55:20.639990",
+    "avg_risk_score": 23.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_091",
+    "entity_type": "user",
+    "total_events": 61,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-24 15:44:28.639990",
+    "avg_risk_score": 23.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_005",
+    "entity_type": "service_account",
+    "total_events": 52,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-31 15:38:42.639990",
+    "avg_risk_score": 23.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_112",
+    "entity_type": "user",
+    "total_events": 57,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-23 13:13:57.639990",
+    "avg_risk_score": 23.7,
+    "max_risk_score": 99.6,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_042",
+    "entity_type": "user",
+    "total_events": 44,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-25 08:21:34.639990",
+    "avg_risk_score": 23.7,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_093",
+    "entity_type": "user",
+    "total_events": 64,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-28 10:39:07.639990",
+    "avg_risk_score": 23.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_104",
+    "entity_type": "user",
+    "total_events": 72,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-30 08:49:04.639990",
+    "avg_risk_score": 23.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_133",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-25 16:13:13.639990",
+    "avg_risk_score": 23.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_077",
+    "entity_type": "user",
+    "total_events": 64,
+    "anomaly_count": 12,
+    "last_seen": "2026-07-23 23:45:02.639990",
+    "avg_risk_score": 23.0,
+    "max_risk_score": 99.5,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_138",
+    "entity_type": "user",
+    "total_events": 68,
+    "anomaly_count": 13,
+    "last_seen": "2026-07-25 17:35:58.639990",
+    "avg_risk_score": 22.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_009",
+    "entity_type": "edge_device",
+    "total_events": 48,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-24 07:09:09.639990",
+    "avg_risk_score": 22.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_005",
+    "entity_type": "user",
+    "total_events": 44,
+    "anomaly_count": 7,
+    "last_seen": "2026-07-24 12:12:10.639990",
+    "avg_risk_score": 22.1,
+    "max_risk_score": 99.6,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_115",
+    "entity_type": "user",
+    "total_events": 56,
+    "anomaly_count": 10,
+    "last_seen": "2026-07-23 08:45:07.639990",
+    "avg_risk_score": 22.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_092",
+    "entity_type": "user",
+    "total_events": 54,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-23 12:16:40.639990",
+    "avg_risk_score": 22.0,
+    "max_risk_score": 99.8,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_055",
+    "entity_type": "user",
+    "total_events": 51,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-25 13:12:40.639990",
+    "avg_risk_score": 21.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_018",
+    "entity_type": "edge_device",
+    "total_events": 64,
+    "anomaly_count": 10,
+    "last_seen": "2026-08-01 03:25:42.639990",
+    "avg_risk_score": 21.2,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_063",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 10,
+    "last_seen": "2026-07-25 03:12:43.639990",
+    "avg_risk_score": 21.2,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_102",
+    "entity_type": "user",
+    "total_events": 51,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-25 13:14:18.639990",
+    "avg_risk_score": 21.2,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_000",
+    "entity_type": "edge_device",
+    "total_events": 67,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-24 19:23:42.639990",
+    "avg_risk_score": 21.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_002",
+    "entity_type": "service_account",
+    "total_events": 69,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-24 21:40:10.639990",
+    "avg_risk_score": 21.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_084",
+    "entity_type": "user",
+    "total_events": 45,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 17:24:01.639990",
+    "avg_risk_score": 21.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_145",
+    "entity_type": "user",
+    "total_events": 46,
+    "anomaly_count": 7,
+    "last_seen": "2026-07-24 21:54:12.639990",
+    "avg_risk_score": 20.9,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_010",
+    "entity_type": "edge_device",
+    "total_events": 54,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-23 14:22:22.639990",
+    "avg_risk_score": 20.9,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_065",
+    "entity_type": "user",
+    "total_events": 55,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 22:10:05.639990",
+    "avg_risk_score": 20.8,
+    "max_risk_score": 99.6,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_012",
+    "entity_type": "user",
+    "total_events": 61,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-28 19:33:59.639990",
+    "avg_risk_score": 20.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_037",
+    "entity_type": "user",
+    "total_events": 71,
+    "anomaly_count": 14,
+    "last_seen": "2026-07-24 16:00:16.639990",
+    "avg_risk_score": 20.7,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_014",
+    "entity_type": "service_account",
+    "total_events": 55,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 19:43:18.639990",
+    "avg_risk_score": 20.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_045",
+    "entity_type": "user",
+    "total_events": 76,
+    "anomaly_count": 11,
+    "last_seen": "2026-07-24 14:13:50.639990",
+    "avg_risk_score": 20.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_096",
+    "entity_type": "user",
+    "total_events": 47,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-25 16:58:25.639990",
+    "avg_risk_score": 20.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_003",
+    "entity_type": "service_account",
+    "total_events": 58,
+    "anomaly_count": 10,
+    "last_seen": "2026-07-25 23:25:06.639990",
+    "avg_risk_score": 20.4,
+    "max_risk_score": 98.6,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_004",
+    "entity_type": "user",
+    "total_events": 55,
+    "anomaly_count": 6,
+    "last_seen": "2026-07-24 13:52:21.639990",
+    "avg_risk_score": 20.3,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_026",
+    "entity_type": "user",
+    "total_events": 55,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-25 01:34:33.639990",
+    "avg_risk_score": 20.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_021",
+    "entity_type": "service_account",
+    "total_events": 49,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 09:37:08.639990",
+    "avg_risk_score": 20.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_137",
+    "entity_type": "user",
+    "total_events": 48,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 17:04:00.639990",
+    "avg_risk_score": 20.0,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_013",
+    "entity_type": "edge_device",
+    "total_events": 61,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-24 11:34:21.639990",
+    "avg_risk_score": 19.7,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_001",
+    "entity_type": "user",
+    "total_events": 43,
+    "anomaly_count": 6,
+    "last_seen": "2026-07-25 04:01:03.639990",
+    "avg_risk_score": 19.6,
+    "max_risk_score": 99.5,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_001",
+    "entity_type": "edge_device",
+    "total_events": 50,
+    "anomaly_count": 7,
+    "last_seen": "2026-07-25 19:21:13.639990",
+    "avg_risk_score": 19.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_105",
+    "entity_type": "user",
+    "total_events": 56,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 17:39:13.639990",
+    "avg_risk_score": 19.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_048",
+    "entity_type": "user",
+    "total_events": 61,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-25 14:03:33.639990",
+    "avg_risk_score": 19.3,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_008",
+    "entity_type": "edge_device",
+    "total_events": 63,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-24 15:22:27.639990",
+    "avg_risk_score": 19.3,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_075",
+    "entity_type": "user",
+    "total_events": 45,
+    "anomaly_count": 5,
+    "last_seen": "2026-07-25 14:14:25.639990",
+    "avg_risk_score": 19.2,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_089",
+    "entity_type": "user",
+    "total_events": 54,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 14:52:45.639990",
+    "avg_risk_score": 19.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_017",
+    "entity_type": "edge_device",
+    "total_events": 39,
+    "anomaly_count": 5,
+    "last_seen": "2026-07-25 19:57:33.639990",
+    "avg_risk_score": 19.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_013",
+    "entity_type": "user",
+    "total_events": 60,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 10:43:45.639990",
+    "avg_risk_score": 18.4,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_019",
+    "entity_type": "service_account",
+    "total_events": 44,
+    "anomaly_count": 5,
+    "last_seen": "2026-07-25 07:22:50.639990",
+    "avg_risk_score": 18.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_031",
+    "entity_type": "user",
+    "total_events": 60,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-25 08:02:01.639990",
+    "avg_risk_score": 17.7,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_028",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-24 17:17:42.639990",
+    "avg_risk_score": 17.6,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_103",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-24 12:05:04.639990",
+    "avg_risk_score": 17.5,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_080",
+    "entity_type": "user",
+    "total_events": 41,
+    "anomaly_count": 5,
+    "last_seen": "2026-07-25 09:17:17.639990",
+    "avg_risk_score": 17.1,
+    "max_risk_score": 99.8,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_085",
+    "entity_type": "user",
+    "total_events": 63,
+    "anomaly_count": 9,
+    "last_seen": "2026-07-24 14:24:34.639990",
+    "avg_risk_score": 17.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_081",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 7,
+    "last_seen": "2026-07-25 11:46:27.639990",
+    "avg_risk_score": 17.0,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_016",
+    "entity_type": "user",
+    "total_events": 46,
+    "anomaly_count": 4,
+    "last_seen": "2026-07-24 17:42:35.639990",
+    "avg_risk_score": 16.6,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "DEV_002",
+    "entity_type": "edge_device",
+    "total_events": 52,
+    "anomaly_count": 6,
+    "last_seen": "2026-07-24 18:21:20.639990",
+    "avg_risk_score": 16.5,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_101",
+    "entity_type": "user",
+    "total_events": 38,
+    "anomaly_count": 4,
+    "last_seen": "2026-07-24 13:00:32.639990",
+    "avg_risk_score": 16.4,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "SVC_024",
+    "entity_type": "service_account",
+    "total_events": 64,
+    "anomaly_count": 5,
+    "last_seen": "2026-07-25 11:26:06.639990",
+    "avg_risk_score": 16.3,
+    "max_risk_score": 98.2,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_047",
+    "entity_type": "user",
+    "total_events": 62,
+    "anomaly_count": 6,
+    "last_seen": "2026-07-25 08:18:15.639990",
+    "avg_risk_score": 16.2,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_118",
+    "entity_type": "user",
+    "total_events": 52,
+    "anomaly_count": 7,
+    "last_seen": "2026-07-24 17:32:44.639990",
+    "avg_risk_score": 15.7,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_032",
+    "entity_type": "user",
+    "total_events": 56,
+    "anomaly_count": 5,
+    "last_seen": "2026-07-24 17:40:56.639990",
+    "avg_risk_score": 15.6,
+    "max_risk_score": 99.7,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_041",
+    "entity_type": "user",
+    "total_events": 68,
+    "anomaly_count": 8,
+    "last_seen": "2026-07-25 17:18:45.639990",
+    "avg_risk_score": 15.6,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_071",
+    "entity_type": "user",
+    "total_events": 53,
+    "anomaly_count": 5,
+    "last_seen": "2026-07-24 12:40:21.639990",
+    "avg_risk_score": 15.3,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_054",
+    "entity_type": "user",
+    "total_events": 60,
+    "anomaly_count": 6,
+    "last_seen": "2026-07-25 16:32:53.639990",
+    "avg_risk_score": 14.8,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_039",
+    "entity_type": "user",
+    "total_events": 49,
+    "anomaly_count": 5,
+    "last_seen": "2026-07-25 11:07:32.639990",
+    "avg_risk_score": 14.1,
+    "max_risk_score": 100.0,
+    "status": "normal"
+  },
+  {
+    "entity_id": "USR_099",
+    "entity_type": "user",
+    "total_events": 45,
+    "anomaly_count": 4,
+    "last_seen": "2026-07-25 16:57:24.639990",
+    "avg_risk_score": 13.7,
+    "max_risk_score": 99.9,
+    "status": "normal"
+  }
+]

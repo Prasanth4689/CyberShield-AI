@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CyberShield AI — AI-Powered Behavioral Anomaly Detection Dashboard for Cybersecurity. Real-time threat monitoring, SHAP explainability, and intelligent alert management.">
+  <title>CyberShield AI — Behavioral Anomaly Detection Dashboard</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#0a0e1a] text-slate-100 font-sans antialiased">
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header id="main-header" class="glass-panel rounded-none border-t-0 border-l-0 border-r-0 sticky top-0 z-40">
+    <div class="max-w-[1600px] mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+          <i class="fa-solid fa-shield-halved text-white text-lg"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-wide">CyberShield <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">AI</span></h1>
+          <p class="text-[10px] text-slate-500 -mt-1 tracking-widest uppercase">Behavioral Anomaly Detection</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#kpi-section" class="nav-link text-sm text-slate-400 hover:text-cyan-400 transition">Overview</a>
+        <a href="#charts-section" class="nav-link text-sm text-slate-400 hover:text-cyan-400 transition">Analytics</a>
+        <a href="#alerts-section" class="nav-link text-sm text-slate-400 hover:text-cyan-400 transition">Alerts</a>
+        <a href="#model-section" class="nav-link text-sm text-slate-400 hover:text-cyan-400 transition">Model</a>
+        <a href="/pdf/presentation" target="_blank" class="text-xs bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/20 px-3 py-1.5 rounded-lg transition font-medium"><i class="fa-solid fa-file-pdf mr-1"></i> Presentation PDF</a>
+        <a href="/pdf/report" target="_blank" class="text-xs bg-purple-500/10 border border-purple-500/30 text-purple-400 hover:bg-purple-500/20 px-3 py-1.5 rounded-lg transition font-medium"><i class="fa-solid fa-file-lines mr-1"></i> Report PDF</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+          <div class="live-indicator"></div>
+          <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Live</span>
+        </div>
+        <button id="search-toggle" class="p-2 rounded-lg hover:bg-white/5 transition text-slate-400 hover:text-white">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+  <main class="max-w-[1600px] mx-auto px-6 py-8 space-y-8">
+
+    <!-- ── KPI CARDS ── -->
+    <section id="kpi-section" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 fade-in">
+      <div class="kpi-card glass-card p-5 rounded-xl group">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Total Events</h3>
+          <div class="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center">
+            <i class="fa-solid fa-database text-blue-400 text-sm"></i>
+          </div>
+        </div>
+        <p class="text-3xl font-extrabold text-white" id="kpi-total-events">—</p>
+        <p class="text-xs text-slate-500 mt-1">Last 30 days</p>
+      </div>
+      <div class="kpi-card glass-card p-5 rounded-xl group">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Anomalies</h3>
+          <div class="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center">
+            <i class="fa-solid fa-triangle-exclamation text-red-400 text-sm"></i>
+          </div>
+        </div>
+        <p class="text-3xl font-extrabold text-amber-400" id="kpi-anomalies">—</p>
+        <p class="text-xs text-slate-500 mt-1">Detected threats</p>
+      </div>
+      <div class="kpi-card glass-card p-5 rounded-xl group">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Critical</h3>
+          <div class="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center pulse-bg">
+            <i class="fa-solid fa-skull-crossbones text-red-500 text-sm"></i>
+          </div>
+        </div>
+        <p class="text-3xl font-extrabold text-red-500" id="kpi-critical">—</p>
+        <p class="text-xs text-slate-500 mt-1">Risk score ≥ 80</p>
+      </div>
+      <div class="kpi-card glass-card p-5 rounded-xl group">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">FP Rate</h3>
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+            <i class="fa-solid fa-check-circle text-emerald-400 text-sm"></i>
+          </div>
+        </div>
+        <p class="text-3xl font-extrabold text-emerald-400"><span id="kpi-fpr">—</span><span class="text-lg">%</span></p>
+        <p class="text-xs text-slate-500 mt-1">False positive rate</p>
+      </div>
+      <div class="kpi-card glass-card p-5 rounded-xl group">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Mean Risk</h3>
+          <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center">
+            <i class="fa-solid fa-gauge-high text-purple-400 text-sm"></i>
+          </div>
+        </div>
+        <p class="text-3xl font-extrabold text-blue-400" id="kpi-mean-risk">—</p>
+        <p class="text-xs text-slate-500 mt-1">Average risk score</p>
+      </div>
+      <div class="kpi-card glass-card p-5 rounded-xl group">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Entities</h3>
+          <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center">
+            <i class="fa-solid fa-users text-cyan-400 text-sm"></i>
+          </div>
+        </div>
+        <p class="text-3xl font-extrabold text-cyan-400" id="kpi-entities">—</p>
+        <p class="text-xs text-slate-500 mt-1">Active users/devices</p>
+      </div>
+    </section>
+
+    <!-- ── CHARTS ROW 1 ── -->
+    <section id="charts-section" class="grid grid-cols-1 lg:grid-cols-3 gap-6 fade-in" style="animation-delay:0.1s">
+      <div class="glass-panel p-6 col-span-1">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="section-title">Attack Distribution</h3>
+          <span class="text-xs text-slate-500 bg-white/5 px-2 py-1 rounded">By Type</span>
+        </div>
+        <div class="relative h-[260px]">
+          <canvas id="chart-attack-dist"></canvas>
+        </div>
+      </div>
+      <div class="glass-panel p-6 col-span-2">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="section-title">Risk Timeline</h3>
+          <span class="text-xs text-slate-500 bg-white/5 px-2 py-1 rounded">24 Hours</span>
+        </div>
+        <div class="relative h-[260px]">
+          <canvas id="chart-risk-timeline"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CHARTS ROW 2 ── -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 fade-in" style="animation-delay:0.15s">
+      <!-- Entity Risk -->
+      <div class="glass-panel p-6 col-span-1">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="section-title">Top Entities by Risk</h3>
+          <span class="text-xs text-slate-500 bg-white/5 px-2 py-1 rounded">Top 10</span>
+        </div>
+        <div class="relative h-[340px]">
+          <canvas id="chart-entity-risk"></canvas>
+        </div>
+      </div>
+
+      <!-- ── ALERT QUEUE ── -->
+      <div id="alerts-section" class="glass-panel p-6 col-span-2 flex flex-col">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <h3 class="section-title"><i class="fa-solid fa-bell text-amber-400 mr-2"></i>Alert Queue</h3>
+          <div class="flex flex-wrap gap-2">
+            <input id="alert-search" type="text" placeholder="Search alerts…"
+              class="bg-white/5 border border-white/10 text-sm rounded-lg px-3 py-1.5 text-slate-300 placeholder-slate-600 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 w-40 transition">
+            <select id="filter-type"
+              class="bg-white/5 border border-white/10 text-sm rounded-lg px-3 py-1.5 text-slate-300 focus:outline-none focus:border-cyan-500/50 transition">
+              <option value="all">All Types</option>
+              <option value="brute_force">Brute Force</option>
+              <option value="impossible_travel">Impossible Travel</option>
+              <option value="credential_stuffing">Credential Stuffing</option>
+              <option value="lateral_movement">Lateral Movement</option>
+              <option value="device_spoofing">Device Spoofing</option>
+              <option value="low_and_slow_exfiltration">Low & Slow Exfil</option>
+              <option value="insider_drift">Insider Drift</option>
+            </select>
+            <select id="filter-entity-type"
+              class="bg-white/5 border border-white/10 text-sm rounded-lg px-3 py-1.5 text-slate-300 focus:outline-none focus:border-cyan-500/50 transition">
+              <option value="all">All Entities</option>
+              <option value="user">Users</option>
+              <option value="service_account">Service Accounts</option>
+              <option value="edge_device">Edge Devices</option>
+            </select>
+            <button id="export-btn"
+              class="flex items-center gap-2 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 text-cyan-400 hover:from-cyan-600/30 hover:to-blue-600/30 border border-cyan-500/30 px-4 py-1.5 rounded-lg text-sm font-medium transition">
+              <i class="fa-solid fa-download text-xs"></i> Export
+            </button>
+          </div>
+        </div>
+
+        <div class="overflow-auto flex-1 rounded-lg border border-white/5 min-h-[280px]">
+          <table class="w-full text-left border-collapse">
+            <thead class="bg-white/5 sticky top-0 z-10">
+              <tr>
+                <th class="th-cell">Severity</th>
+                <th class="th-cell">Risk</th>
+                <th class="th-cell">Attack Type</th>
+                <th class="th-cell">Entity</th>
+                <th class="th-cell">Source IP</th>
+                <th class="th-cell">Location</th>
+                <th class="th-cell">Time</th>
+              </tr>
+            </thead>
+            <tbody id="alerts-tbody" class="divide-y divide-white/5">
+              <!-- JS populated -->
+            </tbody>
+          </table>
+        </div>
+        <div id="alerts-pagination" class="flex items-center justify-between mt-3 text-xs text-slate-500">
+          <span id="alerts-count">Showing 0 alerts</span>
+          <div class="flex gap-2">
+            <button id="prev-page" class="px-3 py-1 rounded bg-white/5 hover:bg-white/10 transition disabled:opacity-30" disabled>Prev</button>
+            <button id="next-page" class="px-3 py-1 rounded bg-white/5 hover:bg-white/10 transition disabled:opacity-30" disabled>Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MODEL PERFORMANCE ── -->
+    <section id="model-section" class="fade-in" style="animation-delay:0.25s">
+      <div class="flex items-center gap-3 mb-6">
+        <h2 class="text-lg font-bold text-white"><i class="fa-solid fa-chart-line text-purple-400 mr-2"></i>Model Performance</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent"></div>
+      </div>
+
+      <!-- Model Metric Cards -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
+        <div class="glass-card p-4 rounded-xl text-center">
+          <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Accuracy</p>
+          <p class="text-2xl font-bold text-white" id="metric-accuracy">—</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center">
+          <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Precision</p>
+          <p class="text-2xl font-bold text-cyan-400" id="metric-precision">—</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center">
+          <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Recall</p>
+          <p class="text-2xl font-bold text-emerald-400" id="metric-recall">—</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center">
+          <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">F1 Score</p>
+          <p class="text-2xl font-bold text-amber-400" id="metric-f1">—</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center">
+          <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">AUC-ROC</p>
+          <p class="text-2xl font-bold text-purple-400" id="metric-auc">—</p>
+        </div>
+      </div>
+
+      <!-- Model Charts -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="glass-panel p-6">
+          <h3 class="section-title mb-4">Feature Importance</h3>
+          <div class="relative h-[320px]">
+            <canvas id="chart-feature-importance"></canvas>
+          </div>
+        </div>
+        <div class="glass-panel p-6">
+          <h3 class="section-title mb-4">Confusion Matrix</h3>
+          <div class="relative h-[320px]">
+            <canvas id="chart-confusion-matrix"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="text-center py-8 text-xs text-slate-600 border-t border-white/5">
+      <p>CyberShield AI &copy; 2026 — AI-Powered Behavioral Anomaly Detection System</p>
+      <p class="mt-1">Built for Honeywell Hackathon | Team Bhanu Prasanth Reddy</p>
+    </footer>
+  </main>
+
+  <!-- ═══════════════ ALERT DETAIL SLIDING PANEL ═══════════════ -->
+  <div id="overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden z-40 transition-opacity duration-300"></div>
+  <aside id="alert-detail-panel"
+    class="fixed right-0 top-0 h-full w-full max-w-lg transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col z-50"
+    style="background: rgba(10, 14, 26, 0.97); backdrop-filter: blur(30px); border-left: 1px solid rgba(255,255,255,0.08);">
+
+    <!-- Panel Header -->
+    <div class="p-5 border-b border-white/10 flex justify-between items-center shrink-0">
+      <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+        <i class="fa-solid fa-circle-exclamation text-amber-500"></i>
+        Alert Detail — <span id="detail-id" class="text-cyan-400 font-mono text-sm"></span>
+      </h2>
+      <button id="close-panel" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Panel Body -->
+    <div class="p-6 overflow-y-auto flex-1 space-y-6">
+      <!-- Severity & Risk -->
+      <div class="flex items-center gap-3">
+        <span id="detail-severity-badge" class="badge badge-critical">CRITICAL</span>
+        <div class="flex-1">
+          <div class="risk-bar-container h-3 rounded-full">
+            <div id="detail-risk-bar" class="risk-bar h-full rounded-full transition-all duration-500" style="width:0%"></div>
+          </div>
+        </div>
+        <span id="detail-risk-score" class="text-xl font-bold text-white">0</span>
+      </div>
+
+      <!-- Event Details Grid -->
+      <div class="grid grid-cols-2 gap-3">
+        <div class="bg-white/5 p-3 rounded-lg">
+          <p class="text-[10px] text-slate-500 uppercase">Entity</p>
+          <p id="detail-entity" class="text-sm font-medium text-cyan-400 mt-0.5 font-mono">—</p>
+        </div>
+        <div class="bg-white/5 p-3 rounded-lg">
+          <p class="text-[10px] text-slate-500 uppercase">Attack Type</p>
+          <p id="detail-attack-type" class="text-sm font-medium text-amber-400 mt-0.5 capitalize">—</p>
+        </div>
+        <div class="bg-white/5 p-3 rounded-lg">
+          <p class="text-[10px] text-slate-500 uppercase">Source IP</p>
+          <p id="detail-ip" class="text-sm font-medium text-slate-300 mt-0.5 font-mono">—</p>
+        </div>
+        <div class="bg-white/5 p-3 rounded-lg">
+          <p class="text-[10px] text-slate-500 uppercase">Location</p>
+          <p id="detail-location" class="text-sm font-medium text-slate-300 mt-0.5">—</p>
+        </div>
+        <div class="bg-white/5 p-3 rounded-lg">
+          <p class="text-[10px] text-slate-500 uppercase">Resource</p>
+          <p id="detail-resource" class="text-sm font-medium text-slate-300 mt-0.5 truncate">—</p>
+        </div>
+        <div class="bg-white/5 p-3 rounded-lg">
+          <p class="text-[10px] text-slate-500 uppercase">Timestamp</p>
+          <p id="detail-timestamp" class="text-sm font-medium text-slate-300 mt-0.5">—</p>
+        </div>
+        <div class="bg-white/5 p-3 rounded-lg">
+          <p class="text-[10px] text-slate-500 uppercase">Auth Method</p>
+          <p id="detail-auth" class="text-sm font-medium text-slate-300 mt-0.5 capitalize">—</p>
+        </div>
+        <div class="bg-white/5 p-3 rounded-lg">
+          <p class="text-[10px] text-slate-500 uppercase">Session Duration</p>
+          <p id="detail-session" class="text-sm font-medium text-slate-300 mt-0.5">—</p>
+        </div>
+      </div>
+
+      <!-- AI Explanation -->
+      <div>
+        <h3 class="text-xs uppercase text-slate-500 font-semibold mb-2 flex items-center gap-2">
+          <i class="fa-solid fa-robot text-purple-400"></i> AI Explanation
+        </h3>
+        <p id="detail-explanation" class="text-sm text-slate-300 bg-gradient-to-br from-purple-500/10 to-blue-500/10 p-4 rounded-lg border border-purple-500/20 leading-relaxed"></p>
+      </div>
+
+      <!-- SHAP Chart -->
+      <div>
+        <h3 class="text-xs uppercase text-slate-500 font-semibold mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-chart-bar text-cyan-400"></i> SHAP Feature Attribution
+        </h3>
+        <div class="h-[220px] w-full bg-white/[0.02] rounded-lg p-2">
+          <canvas id="chart-shap"></canvas>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ═══════════════ SCRIPTS ═══════════════ -->
+  <script src="js/api.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
