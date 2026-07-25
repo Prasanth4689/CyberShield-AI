@@ -6,7 +6,7 @@ Generates all 3 official deliverables in high quality:
   2. CyberShield_AI_Solution_Report.pdf (Executive Report via Headless Chrome HTML-to-PDF)
   3. CyberShield_AI_Source_Code_Documentation.pdf (Code Architecture Docs via Headless Chrome HTML-to-PDF)
 
-Ensures files are saved in both root directory and pdfs/ directory.
+Ensures files are cleanly saved in the pdfs/ directory.
 """
 
 import os
@@ -29,9 +29,11 @@ def run_presentation_generator():
     print("[1/3] Checking 16:9 Widescreen Presentation PDF...")
     print("---------------------------------------------------------")
     target_pdf = os.path.join(BASE_DIR, "CyberShield_AI_Idea_Submission.pdf")
-    if os.path.exists(target_pdf) and os.path.getsize(target_pdf) > 500000:
-        print(f"[OK] High-quality 16:9 Presentation PDF already exists ({os.path.getsize(target_pdf):,} bytes). Skipping COM re-export.")
-        return
+    target_pdf_alt = os.path.join(PDFS_DIR, "CyberShield_AI_Idea_Submission.pdf")
+    for p in [target_pdf, target_pdf_alt]:
+        if os.path.exists(p) and os.path.getsize(p) > 500000:
+            print(f"[OK] High-quality 16:9 Presentation PDF already exists ({os.path.getsize(p):,} bytes). Skipping COM re-export.")
+            return
     build_script = os.path.join(BASE_DIR, "build_presentation.py")
     if os.path.exists(build_script):
         res = subprocess.run([sys.executable, build_script], capture_output=True, text=True)
@@ -83,10 +85,12 @@ def copy_to_pdfs_folder():
         src = os.path.join(BASE_DIR, filename)
         dst = os.path.join(PDFS_DIR, filename)
         if os.path.exists(src):
-            shutil.copy2(src, dst)
-            print(f"[OK] Copied {filename} -> pdfs/{filename}")
+            shutil.move(src, dst)
+            print(f"[OK] Moved {filename} -> pdfs/{filename}")
+        elif not os.path.exists(dst):
+            print(f"[WARN] {filename} missing in both root and pdfs directory!")
         else:
-            print(f"[WARN] {filename} missing in root directory!")
+            print(f"[OK] {filename} already up-to-date in pdfs/{filename}")
 
 def main():
     print("=== CyberShield AI Master Deliverable Generator ===")
