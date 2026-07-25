@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberShield AI — Idea Submission Presentation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Calibri:wght@400;700&family=Inter:wght@400;600;700;800&display=swap');
+
+    @page {
+      size: 16in 9in;
+      margin: 0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .slide {
+      width: 16in;
+      height: 9in;
+      position: relative;
+      background: #ffffff;
+      page-break-after: always;
+      page-break-inside: avoid;
+      overflow: hidden;
+      padding: 0.6in 0.8in;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #06b6d4;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+
+    .header-title {
+      font-size: 28pt;
+      font-weight: 800;
+      color: #0a0e1a;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .template-tag {
+      font-size: 14pt;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .content-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 16px;
+    }
+
+    .footer-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 10px;
+      margin-top: 15px;
+      font-size: 12pt;
+      color: #64748b;
+    }
+
+    h3 {
+      font-size: 18pt;
+      font-weight: 700;
+      color: #06b6d4;
+      margin-bottom: 6px;
+    }
+
+    p, li {
+      font-size: 14pt;
+      line-height: 1.5;
+      color: #334155;
+    }
+
+    ul {
+      margin-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: #f0f9ff;
+      border-left: 5px solid #06b6d4;
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 8px 0;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .title-main {
+      font-size: 42pt;
+      font-weight: 800;
+      color: #06b6d4;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .title-sub {
+      font-size: 22pt;
+      color: #475569;
+      margin-bottom: 25px;
+    }
+
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15pt;
+    }
+
+    .meta-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .meta-table td.label {
+      font-weight: 700;
+      color: #1e293b;
+      width: 35%;
+    }
+
+    .meta-table td.value {
+      color: #06b6d4;
+      font-weight: 600;
+    }
+
+    .img-container {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .img-card {
+      background: white;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 8px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .img-card img {
+      max-height: 2.8in;
+      max-width: 100%;
+      border-radius: 4px;
+      object-fit: contain;
+    }
+
+    .img-card p {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #475569;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════ SLIDE 1: TITLE PAGE ═══════════════ -->
+  <div class="slide">
+    <div class="header-bar">
+      <div class="header-title">TITLE PAGE</div>
+      <div class="template-tag">@SIH Idea submission- Template</div>
+    </div>
+    <div class="content-area grid-2" style="align-items: center;">
+      <div>
+        <div class="title-main">CyberShield AI</div>
+        <div class="title-sub">AI-Powered Behavioral Anomaly Detection for Cybersecurity</div>
+        <div class="highlight-box">
+          <p style="font-size:15pt; font-weight:700; color:#06b6d4;">Real-time Threat Detection, Categorization &amp; Explainable AI Engine</p>
+          <p style="font-size:13pt; margin-top:4px;">Built for Honeywell Hackathon 2026</p>
+          <p style="font-size:12pt; margin-top:6px; color:#0284c7; font-weight:700;">Live Web App: https://cybershield-ai-1-5gyk.onrender.com/</p>
+        </div>
+      </div>
+      <div>
+        <table class="meta-table">
+          <tr>
+            <td class="label">Problem Statement ID</td>
+            <td class="value">Honeywell-2026-Q4</td>
+          </tr>
+          <tr>
+            <td class="label">Problem Statement Title</td>
+            <td class="value" style="color:#1e293b;">AI-Powered Behavioral Anomaly Detection for Cybersecurity</td>
+          </tr>
+          <tr>
+            <td class="label">Theme</td>
+            <td class="value" style="color:#1e293b;">Cybersecurity / AI &amp; Machine Learning</td>
+          </tr>
+          <tr>
+            <td class="label">PS Category</td>
+            <td class="value" style="color:#1e293b;">Software</td>
+          </tr>
+          <tr>
+            <td class="label">Student Name</td>
+            <td class="value" style="color:#1e293b;">Kota Bhanu Prasanth Reddy</td>
+          </tr>
+          <tr>
+            <td class="label">Student ID</td>
+            <td class="value">KBPR-2026 (Registered on portal)</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div>@SIH Idea submission- Template</div>
+      <div>Slide 1</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SLIDE 2: PROPOSED SOLUTION ═══════════════ -->
+  <div class="slide">
+    <div class="header-bar">
+      <div class="header-title">IDEA TITLE &amp; PROPOSED SOLUTION</div>
+      <div class="template-tag">@SIH Idea submission- Template</div>
+    </div>
+    <div class="content-area">
+      <div class="highlight-box">
+        <p style="font-size:18pt; font-weight:800; color:#0a0e1a;">IDEA TITLE: CyberShield AI — Real-Time Behavioral Anomaly Detection &amp; Threat Classification</p>
+      </div>
+      <div class="grid-2" style="margin-top: 10px;">
+        <div class="card">
+          <h3>Detailed Explanation of Proposed Solution</h3>
+          <ul>
+            <li><strong>Multi-Tiered Ensemble ML Framework:</strong> Combines Isolation Forest &amp; One-Class SVM baseline profiling with an XGBoost + LSTM Autoencoder detection core.</li>
+            <li><strong>Real-Time Risk Scoring (0–100):</strong> Scores every access log event dynamically based on multi-dimensional behavioral deviations.</li>
+            <li><strong>7 Attack Type Classifiers:</strong> Categorizes anomalies into <em>Brute Force, Impossible Travel, Credential Stuffing, Lateral Movement, Device Spoofing, Low &amp; Slow Exfiltration, and Insider Drift</em>.</li>
+            <li><strong>Explainable AI (XAI) Engine:</strong> Leverages SHAP TreeExplainer to produce per-alert feature attributions and natural-language narratives for SOC analysts.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Addressing Key Challenges &amp; Innovation</h3>
+          <ul>
+            <li><strong>Addressing Class Imbalance:</strong> Applied SMOTE oversampling &amp; weighted loss (`scale_pos_weight=50`), achieving <strong>97.70% Recall</strong> and <strong>98.78% AUC-ROC</strong>.</li>
+            <li><strong>Addressing Cold-Start Problem:</strong> Implemented population-based statistical baselines for new entities with &lt;20 historical events.</li>
+            <li><strong>Addressing Alert Fatigue:</strong> Achieved <strong>100% Precision@Top1%</strong>, guaranteeing zero false positives in the top 1% alert budget.</li>
+            <li><strong>Deployed Web App:</strong> Live on Render PaaS at <strong style="color:#06b6d4;">https://cybershield-ai-1-5gyk.onrender.com/</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div>@SIH Idea submission- Template</div>
+      <div>Slide 2</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SLIDE 3: TECHNICAL APPROACH ═══════════════ -->
+  <div class="slide">
+    <div class="header-bar">
+      <div class="header-title">TECHNICAL APPROACH</div>
+      <div class="template-tag">@SIH Idea submission- Template</div>
+    </div>
+    <div class="content-area">
+      <div class="grid-2">
+        <div class="card">
+          <h3>Technologies Used</h3>
+          <ul>
+            <li><strong>Programming &amp; Core ML:</strong> Python 3.11 / 3.14, scikit-learn, XGBoost, TensorFlow / Keras, SHAP, imbalanced-learn (SMOTE).</li>
+            <li><strong>Backend REST API:</strong> Flask, Gunicorn, joblib, NumPy, pandas (12 REST endpoints with no-cache headers).</li>
+            <li><strong>Multi-Page Analyst Dashboard:</strong> HTML5, Tailwind CSS, Chart.js, Glassmorphic UI with Spotlight Search (Ctrl+K), Light/Dark Mode, Live Clock.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Implementation Methodology</h3>
+          <ul>
+            <li><strong>1. Data Generation:</strong> Simulated 59,566 access events across 200 entities with 7 distinct attack taxonomies.</li>
+            <li><strong>2. Feature Extraction:</strong> Engineered 43 features covering temporal, geo-velocity (km/h), rolling windows (1h/6h/24h), device fingerprint shifts, and behavioral z-scores.</li>
+            <li><strong>3. Multi-Page Architecture:</strong> Modular view routing for Overview, Analytics, Alerts, and Model Performance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight-box" style="margin-top: 10px;">
+        <h3>End-to-End System Pipeline Architecture</h3>
+        <p style="font-size:13pt; margin-top:4px;">
+          <strong>Access Logs (59.5k events)</strong> &rarr; <strong>Feature Engineering (43 features)</strong> &rarr; <strong>Tier 1: Baseline Profiler</strong> &rarr; <strong>Tier 2: XGBoost + LSTM Autoencoder Detector (Risk Score 0–100)</strong> &rarr; <strong>Tier 3: Attack Classifier</strong> &rarr; <strong>Tier 4: SHAP Explainer</strong> &rarr; <strong>Flask API</strong> &rarr; <strong>Deployed Dashboard UI (https://cybershield-ai-1-5gyk.onrender.com/)</strong>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div>@SIH Idea submission- Template</div>
+      <div>Slide 3</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SLIDE 4: FEASIBILITY AND VIABILITY ═══════════════ -->
+  <div class="slide">
+    <div class="header-bar">
+      <div class="header-title">FEASIBILITY AND VIABILITY</div>
+      <div class="template-tag">@SIH Idea submission- Template</div>
+    </div>
+    <div class="content-area">
+      <div class="grid-3">
+        <div class="card">
+          <h3>Feasibility &amp; Metrics</h3>
+          <ul>
+            <li><strong>Empirical Validation:</strong> Tested on 59,566 events.</li>
+            <li><strong>Accuracy:</strong> 93.59%</li>
+            <li><strong>Recall:</strong> 97.70% (Catches ~98% of threats)</li>
+            <li><strong>AUC-ROC:</strong> 98.78%</li>
+            <li><strong>Precision@Top1%:</strong> 100.0%</li>
+            <li><strong>Low Latency:</strong> Sub-15ms per-event inference.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Potential Challenges &amp; Risks</h3>
+          <ul>
+            <li><strong>1. High Throughput Ingestion:</strong> Scaling to enterprise event streams with millions of events/sec.</li>
+            <li><strong>2. Concept Drift:</strong> Legitimate entity behavior evolving over weeks/months.</li>
+            <li><strong>3. Ambiguous Insider Drift:</strong> Subtle privilege creep overlapping with normal role shifts.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Strategies &amp; Overcoming Risks</h3>
+          <ul>
+            <li><strong>Adaptive Feature Windows:</strong> Rolling 1h/6h/24h windows continuously adapt entity baselines.</li>
+            <li><strong>Cold-Start Baselines:</strong> Population-level fallback profiles handle brand-new entities seamlessly.</li>
+            <li><strong>Production Cloud Host:</strong> Deployed on Render PaaS at <strong>https://cybershield-ai-1-5gyk.onrender.com/</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div>@SIH Idea submission- Template</div>
+      <div>Slide 4</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SLIDE 5: ARTIFACTS ═══════════════ -->
+  <div class="slide">
+    <div class="header-bar">
+      <div class="header-title">ARTIFACTS</div>
+      <div class="template-tag">@SIH Idea submission- Template</div>
+    </div>
+    <div class="content-area">
+      <div class="card" style="padding: 10px 16px;">
+        <p style="font-size:13pt; font-weight:700; color:#06b6d4;">Embedded System Deliverables &amp; Experimental Results</p>
+        <p style="font-size:11pt; color:#475569;">Includes full modular Python ML codebase (9 modules), REST API backend (12 endpoints), trained models (`xgb_detector.pkl`, `attack_classifier.pkl`), and analyst dashboard live at <strong>https://cybershield-ai-1-5gyk.onrender.com/</strong></p>
+      </div>
+
+      <div class="img-container">
+        <div class="img-card" style="width: 32%;">
+          <img src="reports/figures/roc_curve.png" alt="ROC Curve">
+          <p>ROC Curve (AUC = 0.988)</p>
+        </div>
+        <div class="img-card" style="width: 32%;">
+          <img src="reports/figures/confusion_matrix.png" alt="Confusion Matrix">
+          <p>Multi-Class Attack Confusion Matrix</p>
+        </div>
+        <div class="img-card" style="width: 32%;">
+          <img src="reports/figures/shap_summary.png" alt="SHAP Feature Importance">
+          <p>SHAP Global Feature Attribution</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div>@SIH Idea submission- Template</div>
+      <div>Slide 5</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SLIDE 6: RESEARCH AND REFERENCES ═══════════════ -->
+  <div class="slide">
+    <div class="header-bar">
+      <div class="header-title">RESEARCH AND REFERENCES</div>
+      <div class="template-tag">@SIH Idea submission- Template</div>
+    </div>
+    <div class="content-area">
+      <div class="card">
+        <h3>Academic Literature &amp; Foundational Research</h3>
+        <ul>
+          <li><strong>SHAP (SHapley Additive exPlanations):</strong> Lundberg, S. M., &amp; Lee, S.-I. (2017). <em>"A Unified Approach to Interpreting Model Predictions."</em> Advances in Neural Information Processing Systems (NIPS 30).</li>
+          <li><strong>XGBoost Gradient Boosting:</strong> Chen, T., &amp; Guestrin, C. (2016). <em>"XGBoost: A Scalable Tree Boosting System."</em> ACM SIGKDD International Conference on Knowledge Discovery and Data Mining.</li>
+          <li><strong>LSTM Sequence Autoencoders:</strong> Malhotra, P., et al. (2016). <em>"LSTM-based Encoder-Decoder for Multi-sensor Anomaly Detection."</em> ICML Workshop on Anomaly Detection.</li>
+          <li><strong>Isolation Forest:</strong> Liu, F. T., Ting, K. M., &amp; Zhou, Z. H. (2008). <em>"Isolation Forest."</em> IEEE International Conference on Data Mining (ICDM).</li>
+          <li><strong>Cybersecurity Frameworks:</strong> MITRE ATT&amp;CK Matrix for Enterprise (Credential Access, Lateral Movement, Exfiltration tactics).</li>
+        </ul>
+      </div>
+
+      <div class="highlight-box" style="margin-top: 10px;">
+        <h3>Project Repositories &amp; Live Deployed Web Application</h3>
+        <p style="font-size:13pt;">
+          &bull; <strong>Live Deployed Web App:</strong> <code style="color:#06b6d4; font-weight:700;">https://cybershield-ai-1-5gyk.onrender.com/</code><br>
+          &bull; <strong>GitHub Repository:</strong> <code>https://github.com/Prasanth4689/CyberShield-AI</code><br>
+          &bull; <strong>Evaluation Data &amp; Metrics:</strong> <code>reports/evaluation_metrics.json</code> &amp; <code>datasets/processed/alerts.json</code>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div>@SIH Idea submission- Template</div>
+      <div>Slide 6</div>
+    </div>
+  </div>
+
+</body>
+</html>

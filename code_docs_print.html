@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberShield AI — Source Code Documentation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+    @page {
+      size: A4 portrait;
+      margin: 18mm 18mm 20mm 18mm;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #ffffff;
+      color: #1e293b;
+      line-height: 1.6;
+      font-size: 10pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Cover Header */
+    .doc-cover {
+      border-bottom: 3px solid #06b6d4;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    .doc-badge {
+      display: inline-block;
+      background: #ecfeff;
+      color: #0891b2;
+      border: 1px solid #cff4fc;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .doc-title {
+      font-size: 26pt;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .doc-title span { color: #06b6d4; }
+
+    .doc-sub {
+      font-size: 12pt;
+      color: #475569;
+      margin-top: 4px;
+    }
+
+    .meta-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 24px;
+      font-size: 9.5pt;
+    }
+
+    .meta-bar strong { color: #0f172a; }
+    .meta-link { color: #0891b2; font-weight: 600; text-decoration: none; word-break: break-all; }
+
+    /* Page Layout Headers */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+      font-size: 8pt;
+      font-weight: 600;
+      color: #64748b;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 14pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0891b2;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+
+    p { margin-bottom: 8px; text-align: justify; }
+    ul { margin-left: 18px; margin-bottom: 10px; }
+    li { margin-bottom: 4px; }
+
+    /* Code Blocks & Trees */
+    pre.tree {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5pt;
+      line-height: 1.45;
+      background: #0f172a;
+      color: #38bdf8;
+      padding: 14px 18px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 12px 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      background: #f1f5f9;
+      color: #0891b2;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 8.5pt;
+    }
+
+    /* Tables */
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 9pt;
+    }
+
+    table.data-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 7.5pt;
+      letter-spacing: 0.5px;
+      padding: 6px 10px;
+      text-align: left;
+      border-bottom: 2px solid #cbd5e1;
+    }
+
+    table.data-table td {
+      padding: 6px 10px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    table.data-table tr:nth-child(even) { background: #f8fafc; }
+
+    .callout {
+      background: #f0f9ff;
+      border-left: 4px solid #06b6d4;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+    }
+
+    .page-break { page-break-before: always; }
+  </style>
+</head>
+<body>
+
+  <!-- COVER HEADER -->
+  <div class="doc-cover">
+    <span class="doc-badge">Honeywell Hackathon 2026</span>
+    <div class="doc-title">CyberShield <span>AI</span> — Source Code Documentation</div>
+    <div class="doc-sub">Technical Codebase Architecture &amp; Developer Guide</div>
+  </div>
+
+  <div class="meta-bar">
+    <div><strong>Team Lead:</strong> Kota Bhanu Prasanth Reddy (KBPR-2026)</div>
+    <div><strong>Problem Statement:</strong> Honeywell-2026-Q4 (Software)</div>
+    <div style="grid-column: span 2;"><strong>Deployed Website:</strong> <a class="meta-link" href="https://cybershield-ai-1-5gyk.onrender.com/">https://cybershield-ai-1-5gyk.onrender.com/</a></div>
+    <div style="grid-column: span 2;"><strong>GitHub Repository:</strong> <a class="meta-link" href="https://github.com/Prasanth4689/CyberShield-AI">https://github.com/Prasanth4689/CyberShield-AI</a></div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2>1. Repository Structure &amp; Directory Tree</h2>
+  <pre class="tree">CyberShield-AI/
+├── ml/                         # Core Machine Learning Modules
+│   ├── data_generator.py       # Synthetic access-log generator (59.5k events, 200 entities)
+│   ├── feature_engineering.py  # 43-feature pipeline (temporal, geo-velocity, device)
+│   ├── baseline_model.py       # Tier 1: Isolation Forest + One-Class SVM profiler
+│   ├── detection_model.py      # Tier 2: XGBoost + LSTM Autoencoder ensemble
+│   ├── classifier.py           # Tier 3: SMOTE + Multi-Class XGBoost attack classifier
+│   ├── explainer.py            # Tier 4: SHAP TreeExplainer & NL explanation generator
+│   ├── evaluate.py             # Metrics computation (Confusion Matrix, ROC, PR)
+│   └── train_pipeline.py       # End-to-end training orchestrator
+├── backend/                    # Flask REST API Server
+│   ├── app.py                  # API endpoints + static dashboard server (no-cache headers)
+│   └── config.py               # Centralized configuration & directory paths
+├── dashboard/                  # Analyst-Facing Web Application
+│   ├── index.html              # Multi-page SPA (Overview, Analytics, Alerts, Model)
+│   ├── css/styles.css          # Glassmorphism dark/light theme CSS
+│   ├── js/api.js               # REST API client with mock fallback
+│   ├── js/charts.js            # Chart.js visualization engine
+│   └── js/app.js               # Tab router, spotlight search (Ctrl+K), theme, events
+├── datasets/                   # Generated access logs & processed feature vectors
+├── models/                     # Saved model checkpoints (.joblib)
+├── reports/figures/            # High-res evaluation plots (PNG)
+├── run.py                      # CLI entry point (train / serve)
+├── Procfile                    # Render deployment start command
+└── render.yaml                 # Render cloud deployment blueprint</pre>
+
+  <!-- SECTION 2 -->
+  <h2>2. Core Machine Learning Modules (ml/)</h2>
+
+  <h3>ml/data_generator.py</h3>
+  <p>Generates 59,566 synthetic access events for 200 entities (150 users, 30 service accounts, 20 edge devices) over 30 days. Generates habitual behavioral profiles (preferred login hours, consistent geo locations, typical resources) for 97-98% normal traffic, and injects 7 attack patterns (2-3% total).</p>
+
+  <h3>ml/feature_engineering.py</h3>
+  <p><code>FeatureEngineer</code> class with <code>fit_transform(df)</code> method. Engineers 43 behavioral features: temporal (login counts 1h/6h/24h, off-hours flag), geo-velocity (km/h between consecutive logins), resource overlap ratio (Jaccard similarity), device fingerprint changes, and entity age baselines.</p>
+
+  <h3>ml/baseline_model.py</h3>
+  <p><code>BaselineProfiler</code>: Combines Isolation Forest (contamination=0.02) and One-Class SVM (nu=0.02) trained exclusively on normal traffic. Handles cold-start entities (&lt;20 events) using population-level fallback baselines.</p>
+
+  <h3>ml/detection_model.py</h3>
+  <p><code>AnomalyDetector</code>: Ensemble of XGBoost binary classifier (tuned with <code>scale_pos_weight=50</code>) and a 2-layer LSTM Autoencoder (64 units) trained on event sequences. Returns a continuous Risk Score (0–100).</p>
+
+  <h3>ml/classifier.py</h3>
+  <p><code>AttackClassifier</code>: Multi-class XGBoost model with SMOTE oversampling to categorize anomalous events into 7 attack types: <em>brute_force, impossible_travel, credential_stuffing, lateral_movement, device_spoofing, low_and_slow_exfiltration, insider_drift</em>.</p>
+
+  <h3>ml/explainer.py</h3>
+  <p><code>AlertExplainer</code>: SHAP TreeExplainer calculating per-event feature attributions. Converts top positive/negative SHAP contributions into natural-language narratives for SOC analysts.</p>
+
+  <div class="page-break"></div>
+  <div class="page-header">
+    <span>CyberShield AI — Source Code Documentation</span>
+    <span>Honeywell Hackathon 2026</span>
+  </div>
+
+  <!-- SECTION 3 -->
+  <h2>3. Backend REST API Endpoints (backend/app.py)</h2>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Endpoint</th>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><code>/</code></td><td>GET</td><td>Serves main dashboard SPA index.html</td></tr>
+      <tr><td><code>/api/stats</code></td><td>GET</td><td>Returns high-level KPI metrics (total events, anomalies, FPR, mean risk)</td></tr>
+      <tr><td><code>/api/alerts</code></td><td>GET</td><td>Paginated &amp; filtered alert queue (attack_type, entity_type, search)</td></tr>
+      <tr><td><code>/api/alerts/&lt;id&gt;</code></td><td>GET</td><td>Full alert detail including SHAP feature attributions &amp; explanation</td></tr>
+      <tr><td><code>/api/entities</code></td><td>GET</td><td>List of active entities ranked by average risk score</td></tr>
+      <tr><td><code>/api/predict</code></td><td>POST</td><td>Inference endpoint to score new access log events in real time</td></tr>
+      <tr><td><code>/api/model/metrics</code></td><td>GET</td><td>Model evaluation metrics (Accuracy, F1, Confusion Matrix, ROC)</td></tr>
+      <tr><td><code>/api/reports/export</code></td><td>GET</td><td>Exports filtered incident alerts as a downloadable CSV file</td></tr>
+      <tr><td><code>/api/health</code></td><td>GET</td><td>Health check endpoint returning system status</td></tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION 4 -->
+  <h2>4. Web Dashboard Architecture (dashboard/)</h2>
+
+  <h3>Multi-Page View Router (dashboard/js/app.js)</h3>
+  <p>Implements client-side view switching without page reloads across 4 sections: <code>#page-overview</code>, <code>#page-analytics</code>, <code>#page-alerts</code>, and <code>#page-model</code>. Syncs with browser URL hash (<code>#overview</code>, <code>#analytics</code>, <code>#alerts</code>, <code>#model</code>) and handles back/forward history navigation.</p>
+
+  <h3>Global Spotlight Search (Ctrl+K / Cmd+K)</h3>
+  <p>Search overlay implemented with inline display logic for 100% reliable rendering. Filters across all alerts by entity ID, IP address, location, and attack taxonomy with keyboard navigation (↑↓ Enter Esc).</p>
+
+  <h3>Dual Theme System (dashboard/css/styles.css)</h3>
+  <p>Full light/dark theme support using CSS custom properties (<code>--bg-primary</code>, <code>--bg-card</code>, <code>--glass-border</code>). Theme preference persists in <code>localStorage</code>.</p>
+
+  <!-- SECTION 5 -->
+  <h2>5. Local Setup &amp; Deployment Guide</h2>
+  <div class="callout">
+    <strong>Production Cloud Deployment:</strong> Live on Render PaaS at <strong style="color:#0891b2;">https://cybershield-ai-1-5gyk.onrender.com/</strong> with Gunicorn WSGI server and Python 3.11 runtime.
+  </div>
+
+  <pre class="tree"># 1. Clone repository
+git clone https://github.com/Prasanth4689/CyberShield-AI.git
+cd CyberShield-AI
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Train ML Pipeline (Generates data & models)
+python run.py train
+
+# 4. Start Local Dashboard & API Server
+python run.py serve
+# Open http://localhost:5000 in your browser</pre>
+
+</body>
+</html>
