@@ -1,13 +1,13 @@
 """
 CyberShield AI — Main Entry Point
 ===================================
-Single command to train models and launch the dashboard.
+Single command to train models or launch the dashboard.
 
 Usage:
     python run.py train     — Run the full ML training pipeline
     python run.py serve     — Start the Flask API server + dashboard
     python run.py all       — Train models, then launch the dashboard
-    python run.py           — Same as 'all'
+    python run.py           — Defaults to 'serve' (ideal for production / web hosting)
 """
 import os
 import sys
@@ -64,7 +64,7 @@ def run_server():
         logger.error("Server script not found: %s", server_script)
         sys.exit(1)
 
-    # Run the Flask server (blocks until Ctrl+C)
+    # Run the Flask server
     subprocess.run(
         [sys.executable, server_script],
         cwd=PROJECT_DIR,
@@ -73,7 +73,9 @@ def run_server():
 
 def main():
     """Parse command and execute the appropriate action."""
-    command = sys.argv[1].lower() if len(sys.argv) > 1 else "all"
+    # On hosting platforms (like Render), default to 'serve' to avoid OOM during build/start
+    default_cmd = "serve" if os.environ.get("RENDER") or len(sys.argv) == 1 else "all"
+    command = sys.argv[1].lower() if len(sys.argv) > 1 else default_cmd
 
     if command == "train":
         run_training()
