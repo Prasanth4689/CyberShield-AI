@@ -85,8 +85,8 @@ def copy_to_pdfs_folder():
         src = os.path.join(BASE_DIR, filename)
         dst = os.path.join(PDFS_DIR, filename)
         if os.path.exists(src):
-            shutil.move(src, dst)
-            print(f"[OK] Moved {filename} -> pdfs/{filename}")
+            shutil.copy2(src, dst)
+            print(f"[OK] Copied {filename} -> pdfs/{filename}")
         elif not os.path.exists(dst):
             print(f"[WARN] {filename} missing in both root and pdfs directory!")
         else:
